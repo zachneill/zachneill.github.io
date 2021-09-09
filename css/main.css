@@ -5,3 +5,9 @@ body {
 .hobbies {
   color: #D3D3D3;
 }
+#spotify {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+}
