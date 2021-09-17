@@ -9,8 +9,14 @@ router.get('/',function(req,res){
 
 app.use('/', router);
 app.use(express.static(__dirname))
-app.listen(process.env.PORT || 8080);
-console.log('Running on localhost:8080');
+
+try {
+  app.listen(process.env.PORT || 8080);
+  console.log('\nRUNNING ON localhost:8080\n quit_server.sh TO STOP');
+} catch (error) {
+  console.log("SERVER ALREADY RUNNING ON PORT 8080")
+}
+
 
 // Maintain a hash of all connected sockets
 var sockets = {}, nextSocketId = 0;
@@ -29,18 +35,3 @@ app.on('connection', function (socket) {
   // Extend socket lifetime for demo purposes
   socket.setTimeout(400);
 });
-
-// Count down from 10 seconds
-(function countDown (counter) {
-  console.log(counter);
-  if (counter > 0)
-    return setTimeout(countDown, 100, counter - 1);
-
-  // Close the server
-  server.close(function () { console.log('Server closed!'); });
-  // Destroy all open sockets
-  for (var socketId in sockets) {
-    console.log('socket', socketId, 'destroyed');
-    sockets[socketId].destroy();
-  }
-})(10);
