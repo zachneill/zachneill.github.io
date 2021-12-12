@@ -1,0 +1,12 @@
+@font-face {
+  font-family: league-spartan;
+  src: url(LeagueSpartan-Bold.otf);
+}
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(7, 7, 7);
+}
+.ls-font {
+  font-family: league-spartan;
+}

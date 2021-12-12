@@ -6,75 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Zach Neill</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href='css/main.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-  <div id="navbar"></div>
-  <script>
-      $.get("includes/navbar.html", function(data){
-          $("#navbar").replaceWith(data);
-      });
-  </script>
-  <div class="container-fluid bg-light bg-gradient">
-    <div class="row mx-3 text-break">
-      <div class="col col-lg-6">
-        <h2>
-          Hey, I'm Zach! I am a CS major and Digital Media minor. I like to code websites.
-          I go to Berea College in pursuit of a Bachelor's degree. Ultimately, I
-          would love to take the route of either full stack developer or UX designer!
-          I am still learning the ropes, but I will qualify as a senior next year and
-          hope to land another internship before my college time comes to a close.
-        </h2>
-        <h5 class="my-4">
-          You can take a look at my <a class="link-info" href="https://zachneillosse.wordpress.com">blog</a>
-          as well as my <a class="link-secondary" href="https://github.com/zachneill">GitHub profile.</a>
-        </h5>
-        <h5>
-          Additionally, you can <a class="link-primary" href="downloads/Zach Neill -
-          Everytime You Fall (feat. Brado Sanz).mp3" download>download a song I made</a> from my album "The Lost Semester"!
-        </h5>
-      </div>
-      <div class="col col-lg-6 my-3">
-        <img class="img-fluid border border-5 border-secondary mh-50 rounded text-centered" src="images/me.jpg" alt="me">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="ls-font navbar-brand" href="/index.html">Zach Neill</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" aria-current="page" href="./about.html">About</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
       </div>
     </div>
-  <div class="border rounded border-4 border-primary bg-dark mt-3 hobbies">
-    <h4 class="m-3">My favorite hobbies:</h4>
-    <ul>
-      <li>Music Composition
-        <ul>
-          <li>Making music is fun. In my free time, I love creating EDM music as well as
-          pop punk-esque stuff. </li>
-          <li>I'm also on Spotify as Zach Neill!</li>
-        </ul>
-      </li>
-      <li>Chess
-        <ul>
-          <li>I first learned how to play when I was 7.</li>
-          <li>I've played in a number of in-person tournaments and online.</li>
-          <li>You can check me out on Chess.com, or set up a board and ask me.</li>
-        </ul>
-      </li>
-      <li>Sports</li>
-      <ul>
-        <li>More specifically, hockey and volleyball.</li>
-        <li>I love watching hockey the most!</li>
-        <li>While I don't play much anymore, I try to when I get the chance.</li>
-      </ul>
-    </ul>
-    <div class="text-center m-4">
-      <button onclick="showSpotify()" class="btn btn-primary">
-        Click to See My Music!
-      </button>
+  </nav>
+  <div class="container-fluid">
+    <br class="my-5">
+    <div class="mt-5 row text-center text-white overflow-hidden">
+      <div style="height: 5vh;"></div>
+      <h1 class="ls-font main-title"> Hey, I'm Zach :)</h1>
+      <h4 class="bullet-1 animate__delay-1s">Your favorite software engineer</h4>
+      <h4 class="bullet-2 animate__delay-2s">The developer you need</h4>
     </div>
   </div>
-  <iframe class="rounded m-3" id="spotify" src="https://open.spotify.com/embed/artist/3mbmorBOJpVAPlGFEZ2B6h"
-   width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="js/main.js" type="text/javascript"></script>
-
-</body>
+  </body>
 </html>

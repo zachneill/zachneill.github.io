@@ -1,8 +1,17 @@
-console.log("Main js works")
-$(document).ready(function() {
-  $('#spotify').hide();
-})
+const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {
+  const animationName = `${prefix}${animation}`;
+  const node = document.querySelector(element);
+  node.classList.add(`${prefix}animated`, animationName);
+  function handleAnimationEnd(event) {
+    event.stopPropagation();
+    node.classList.remove(`${prefix}animated`, animationName);
+    resolve('Animation ended');
+  }
+  node.addEventListener('animationend', handleAnimationEnd, {once: true});
+});
 
-function showSpotify(){
-  $('#spotify').fadeIn('slow');
-}
+animateCSS(".main-title", 'bounceInUp').then((message) => {
+  animateCSS(".main-title", 'pulse');
+});
+animateCSS(".bullet-1", "lightSpeedInLeft");
+animateCSS(".bullet-2", "lightSpeedInRight");
