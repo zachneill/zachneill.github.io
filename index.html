@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="revealer vh-100 vw-100 position-absolute"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="revealer vh-100 vw-75 position-absolute"></div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="ls-font navbar-brand" href="/index.html">Zach Neill</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,23 +27,40 @@
   </nav>
   <div class="container-fluid text-white">
     <div class="vh-100">
-      <br class="my-5">
       <div class="mt-5 row text-center overflow-hidden">
-        <div style="height: 5vh;"></div>
-        <h1 class="ls-font main-title opacity-0 animate__delay-1s"> Hey, I'm Zach :)</h1>
-        <h4 class="bullet-1 animate__delay-2s">Your favorite software engineer</h4>
-        <h4 class="bullet-2 animate__delay-3s">The developer you need</h4>
+        <div class="div-spacing"></div>
+        <h1 class="ls-font main-title opacity-0 animate__delay-1s"> Hey, I'm Zach Neill :)</h1>
+        <h4 class="bullet-1 opacity-0 animate__delay-2s">Your favorite software engineer</h4>
+        <h4 class="bullet-2 opacity-0 animate__delay-3s">The developer you need</h4>
       </div>
     </div>
-    <div class="text-center my-3">
-      <h5 class="d-inline">Currently developing a website from scratch for thousands of staff and students</h5>
-      <a class="btn btn-outline-primary d-inline ms-2" href="#">Context</a>
-    </div>
-    <div class="text-center my-3">
-      <h5 class="d-inline">Currently the manager of a college software repair center</h5>
-      <a class="btn btn-outline-primary d-inline ms-2" href="#">Context</a>
+    <div class="row d-flex">
+      <div class="col-md-6 text-center my-3">
+        <h5 class="d-inline">Developing a website for thousands of staff and students</h5>
+        <a class="btn btn-outline-primary d-inline ms-2 mt-3" data-bs-toggle="collapse" 
+        role="button" aria-expanded="false" aria-controls="collapseExample" href="#celts-collapse" >Context</a>
+        <div class="collapse" id="celts-collapse">
+          <div class="mt-2 card card-body text-dark">
+            <h5 class="card-title">CELTS Software Developer</h5>
+            <p class="card-text">HI</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-3">
+        <h5 class="d-inline">Lead manager of a college software center</h5>
+        <a class="btn btn-outline-primary d-inline ms-2 mt-3" data-bs-toggle="collapse" 
+        role="button" aria-expanded="false" aria-controls="collapseExample" href="#iss-collapse">Context</a>
+        <div class="collapse" id="iss-collapse">
+          <div class="mt-2 card card-body text-dark">
+            <h5 class="card-title">IS&S Manager</h5>
+            <p class="card-text">HELLO</p>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
     <br class="my-5">
+    <div class="div-spacing"></div>
     <footer class="text-center">
       ©2021 Zach Neill
     </footer>
