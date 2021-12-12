@@ -10,3 +10,11 @@ body {
 .ls-font {
   font-family: league-spartan;
 }
+.revealer {
+  background-color: rgb(7, 7, 7);
+}
+.transitionOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
