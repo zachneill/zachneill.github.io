@@ -5,6 +5,10 @@ $(document).ready(function(){
     animateCSS(".about-me", 'bounceInUp').then((message) => {
       animateCSS(".about-me", 'pulse');
     });
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
   });
     
   const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {  
