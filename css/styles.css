@@ -29,6 +29,9 @@ body {
 .br-20 {
   height: 20vh;
 }
+.br-10 {
+  height: 10vh;
+}
 .btn-no-style {
   background: none; 
   border: none;
