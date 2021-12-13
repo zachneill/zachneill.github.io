@@ -1,9 +1,7 @@
 $(document).ready(function(){
     animateCSS(".navbar-brand", "flipInX");
-    setTimeout(revealFooter, 100);
-    setTimeout(revealEmail, 300);
-    setTimeout(revealMessage, 400);
-    setTimeout(revealSubmit, 500);
+    setTimeout(revealBQ, 200);
+    setTimeout(revealFooter, 500);
     animateCSS(".about-me", 'bounceInUp').then((message) => {
       animateCSS(".about-me", 'pulse');
     });
@@ -37,6 +35,9 @@ $(document).ready(function(){
   function revealFooter(){
     animateCSS(".footer", "bounceInUp");
   };
+  function revealBQ(){
+    animateCSS(".bq-div", "bounceInUp");
+  }
   function fadeToPage(page){
     $(".navbar-collapse").collapse('hide');
     $(".footer").addClass("transitionOut");
