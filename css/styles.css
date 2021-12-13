@@ -18,6 +18,14 @@ body {
   opacity: 0;
   transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
-.div-spacing {
+.transitionIn {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+.br-40 {
   height: 40vh;
+}
+.br-20 {
+  height: 20vh;
 }
