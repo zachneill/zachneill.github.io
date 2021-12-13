@@ -8,8 +8,7 @@ $(document).ready(function(){
   animateCSS(".bullet-2", "lightSpeedInRight");
 });
 
-const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {
-  
+const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {  
   const animationName = `${prefix}${animation}`;
   const node = document.querySelector(element);
   node.classList.add(`${prefix}animated`, animationName);
@@ -45,3 +44,6 @@ function reveal(){
 //     animateCSS(".bullet-2", "lightSpeedInRight");
 //   };
 // });
+// export default function animate(element, animation, prefix = 'animate__'){
+//   animateCSS(element, animation, prefix= 'animate__');
+// }
