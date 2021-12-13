@@ -38,6 +38,8 @@ function revealFooter(){
   animateCSS(".footer", "bounceInUp");
 };
 function fadeToPage(page){
+  $(".navbar-collapse").collapse('hide');
+  $(".footer").addClass("transitionOut");
   animateCSS(".navbar-brand", 'flipOutX').then((message) => {
     $(".navbar-brand").addClass("opacity-0");
   });

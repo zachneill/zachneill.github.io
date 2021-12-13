@@ -1,6 +1,6 @@
 $(document).ready(function(){
   animateCSS(".navbar-brand", "flipInX");
-  setTimeout(revealFooter, 100);
+  setTimeout(revealFooter, 150);
   animateCSS(".main-title", 'bounceInUp').then((message) => {
     animateCSS(".main-title", 'pulse');
   });
@@ -28,6 +28,8 @@ function revealFooter(){
   animateCSS(".footer", "bounceInUp");
 };
 function fadeToPage(page){
+  $(".navbar-collapse").collapse('hide');
+  $(".footer").addClass("transitionOut");
   animateCSS(".navbar-brand", 'flipOutX').then((message) => {
     $(".navbar-brand").addClass("opacity-0");
   });
