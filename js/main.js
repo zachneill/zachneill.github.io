@@ -6,6 +6,11 @@ $(document).ready(function(){
   });
   animateCSS(".bullet-1", "lightSpeedInLeft");
   setTimeout(revealBullet, 200);
+  var carouselSlides = document.querySelector('#carouselSlides')
+  var carousel = new bootstrap.Carousel(carouselSlides, {
+    wrap: true,
+    pause: false
+  });
 });
 
 const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {  
