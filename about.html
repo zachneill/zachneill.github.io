@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="d-flex flex-column h-100">
   <div class="revealer vh-100 vw-75 position-absolute"></div>
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="ls-font navbar-brand" href="./index.html">Zach Neill</a>
+      <button class="ls-font navbar-brand btn-no-style" onclick="fadeToPage('home')">Zach Neill / About</button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="./about.html">About</a>
-          <a class="nav-link" href="./contact.html">Contact</a>
+          <button class="nav-link btn-no-style active" aria-current="page" onclick="fadeToPage('about')">About</button>
+          <button class="nav-link btn-no-style" onclick="fadeToPage('contact')">Contact</button>
         </div>
       </div>
     </div>

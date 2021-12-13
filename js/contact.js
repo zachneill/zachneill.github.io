@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  setTimeout(reveal, 500);
+  animateCSS(".navbar-brand", "flipInX");
+  setTimeout(revealFooter, 100);
   setTimeout(revealEmail, 300);
   setTimeout(revealMessage, 400);
   setTimeout(revealSubmit, 500);
@@ -32,4 +33,22 @@ function revealEmail(){
 };
 function revealMessage(){
   animateCSS(".message", "fadeInUpBig");
+};
+function revealFooter(){
+  animateCSS(".footer", "bounceInUp");
+};
+function fadeToPage(page){
+  animateCSS(".navbar-brand", 'flipOutX').then((message) => {
+    $(".navbar-brand").addClass("opacity-0");
+  });
+  animateCSS(".all-no-nav", 'bounceOutDown').then((message) => {
+    $(".all-no-nav").addClass("opacity-0");
+    if (page == "about"){
+      location.href = 'about.html';
+    } else if (page == "contact"){
+      location.href = 'contact.html';
+    } else {
+      location.href = 'index.html';
+    };
+  });
 };

@@ -29,3 +29,7 @@ body {
 .br-20 {
   height: 20vh;
 }
+.btn-no-style {
+  background: none; 
+  border: none;
+}
