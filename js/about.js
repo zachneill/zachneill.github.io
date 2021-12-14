@@ -1,7 +1,9 @@
 $(document).ready(function(){
-  animateCSS(".navbar-brand", "flipInX");
-  setTimeout(function(){ animateCSS(".bq-div", "fadeIn") }, 900);
+  animateCSS(".home-flip", "flipInX");
+  setTimeout(function(){ animateCSS(".about-flip", "flipInX") }, 200);
+  setTimeout(function() { animateCSS(".contact-flip", "flipInX") }, 400);
   setTimeout(function() { animateCSS(".footer", "bounceInUp") }, 500);
+  setTimeout(function(){ animateCSS(".bq-div", "fadeIn") }, 900);
   wait = 1000;
   for (let i = 1; i<=30; i++) {
     setTimeout(function() { animateCSS(".btn"+i, "bounceInUp") }, wait);
@@ -32,8 +34,14 @@ const animateCSS = (element, animation, prefix = 'animate__') => new Promise((re
 function fadeToPage(page){
   $(".navbar-collapse").collapse('hide');
   $(".footer").addClass("transitionOut");
-  animateCSS(".navbar-brand", 'flipOutX').then((message) => {
-    $(".navbar-brand").addClass("opacity-0");
+  animateCSS(".home-flip", 'flipOutX').then((message) => {
+    $(".home-flip").addClass("opacity-0");
+  });
+  animateCSS(".about-flip", 'flipOutX').then((message) => {
+    $(".about-flip").addClass("opacity-0");
+  });
+  animateCSS(".contact-flip", 'flipOutX').then((message) => {
+    $(".contact-flip").addClass("opacity-0");
   });
   animateCSS(".all-no-nav", 'bounceOutDown').then((message) => {
     $(".all-no-nav").addClass("opacity-0");

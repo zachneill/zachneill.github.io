@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  animateCSS(".navbar-brand", "flipInX");
+  animateCSS(".home-flip", "flipInX");
+  setTimeout(function(){ animateCSS(".about-flip", "flipInX") }, 200);
+  setTimeout(function() { animateCSS(".contact-flip", "flipInX") }, 400);
   setTimeout(function(){ animateCSS(".footer", "bounceInUp") }, 150);
   animateCSS(".main-title", 'bounceInUp').then((message) => {
     animateCSS(".main-title", 'pulse');
@@ -29,8 +31,14 @@ const animateCSS = (element, animation, prefix = 'animate__') => new Promise((re
 function fadeToPage(page){
   $(".navbar-collapse").collapse('hide');
   $(".footer").addClass("transitionOut");
-  animateCSS(".navbar-brand", 'flipOutX').then((message) => {
-    $(".navbar-brand").addClass("opacity-0");
+  animateCSS(".home-flip", 'flipOutX').then((message) => {
+    $(".home-flip").addClass("opacity-0");
+  });
+  animateCSS(".about-flip", 'flipOutX').then((message) => {
+    $(".about-flip").addClass("opacity-0");
+  });
+  animateCSS(".contact-flip", 'flipOutX').then((message) => {
+    $(".contact-flip").addClass("opacity-0");
   });
   animateCSS(".all-no-nav", 'bounceOutDown').then((message) => {
     $(".all-no-nav").addClass("opacity-0");
