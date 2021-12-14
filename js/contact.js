@@ -75,6 +75,12 @@ function submitForm() {
 function showAlert(){
   console.log("Showing alert");
   $('.submit-form')[0].reset();
-  $(".alert-success").fadeIn();
+  animateCSS(".alert-success", 'fadeInLeft').then((message) => {
+    animateCSS(".alert-success", 'pulse').then((message) => {
+      setTimeout(function(){ animateCSS(".alert-success", 'fadeOutLeft').then((message) => {
+        $(".alert-success").addClass("opacity-0");
+      }); }, 3000);
+    });
+  });
   return false;
 };
