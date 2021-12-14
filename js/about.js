@@ -1,17 +1,17 @@
 $(document).ready(function(){
   animateCSS(".home-flip", "flipInX");
   setTimeout(function(){ animateCSS(".about-flip", "flipInX") }, 200);
-  setTimeout(function() { animateCSS(".contact-flip", "flipInX") }, 400);
-  setTimeout(function() { animateCSS(".footer", "bounceInUp") }, 500);
+  setTimeout(function(){ animateCSS(".contact-flip", "flipInX") }, 400);
+  animateCSS(".about-me", 'bounceInUp').then((message) => {
+    animateCSS(".about-me", 'pulse');
+  });  
+  setTimeout(function(){ animateCSS(".footer", "bounceInUp") }, 500);
   setTimeout(function(){ animateCSS(".bq-div", "fadeIn") }, 900);
   wait = 1000;
   for (let i = 1; i<=30; i++) {
     setTimeout(function() { animateCSS(".btn"+i, "bounceInUp") }, wait);
     wait+=50;
   };
-  animateCSS(".about-me", 'bounceInUp').then((message) => {
-    animateCSS(".about-me", 'pulse');
-  });  
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)

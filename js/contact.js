@@ -1,14 +1,20 @@
 $(document).ready(function(){
   animateCSS(".home-flip", "flipInX");
   setTimeout(function(){ animateCSS(".about-flip", "flipInX") }, 200);
-  setTimeout(function() { animateCSS(".contact-flip", "flipInX") }, 400);
-  setTimeout(function(){ animateCSS(".email", "fadeInUpBig") }, 300);
-  setTimeout(function(){ animateCSS(".message", "fadeInUpBig") }, 400);
-  setTimeout(function(){ animateCSS(".submitBtn", "fadeInUpBig") }, 500);
   animateCSS(".get-in-touch", 'bounceInUp').then((message) => {
     animateCSS(".get-in-touch", 'pulse');
   });
-  setTimeout(function(){ animateCSS(".footer", "fadeInUpBig") }, 1700);
+  setTimeout(function(){ animateCSS(".contact-flip", "flipInX") }, 400);
+  setTimeout(function(){ animateCSS(".email", "fadeInUpBig") }, 1300);
+  setTimeout(function(){ animateCSS(".message", "fadeInUpBig") }, 1400);
+  setTimeout(function(){ animateCSS(".submitBtn", "fadeInUpBig") }, 1500);
+  setTimeout(function(){ animateCSS(".platforms", "bounceInUp") }, 1600);
+  wait = 1700;
+  for (let i = 1; i<=5; i++) {
+    setTimeout(function() { animateCSS(".btn"+i, "bounceInUp") }, wait);
+    wait+=50;
+  };
+  setTimeout(function(){ animateCSS(".footer", "fadeInUpBig") }, 1800);
 });
   
 const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {  

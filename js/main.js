@@ -1,13 +1,22 @@
 $(document).ready(function(){
   animateCSS(".home-flip", "flipInX");
   setTimeout(function(){ animateCSS(".about-flip", "flipInX") }, 200);
-  setTimeout(function() { animateCSS(".contact-flip", "flipInX") }, 400);
-  setTimeout(function(){ animateCSS(".footer", "bounceInUp") }, 150);
+  setTimeout(function(){ animateCSS(".contact-flip", "flipInX") }, 400);
   animateCSS(".main-title", 'bounceInUp').then((message) => {
     animateCSS(".main-title", 'pulse');
   });
   setTimeout(function() { animateCSS(".bullet-1", "lightSpeedInLeft"); }, 1000);
   setTimeout(function() { animateCSS(".bullet-2", "lightSpeedInRight"); }, 1200);
+  setTimeout(function() { animateCSS(".carousel", "bounceInUp"); }, 1600);
+  setTimeout(function() { animateCSS(".current-work", "bounceInUp"); }, 1700);
+  wait = 1800;
+  for (let i = 1; i<=4; i++) {
+    setTimeout(function() { animateCSS(".title"+i, "bounceInUp") }, wait);
+    setTimeout(function() { animateCSS(".btn"+i, "bounceInUp") }, wait+50);
+    wait+=150;
+  };
+  setTimeout(function(){ animateCSS(".footer", "bounceInUp") }, 2000);
+
   var carouselSlides = document.querySelector('#carouselSlides')
   var carousel = new bootstrap.Carousel(carouselSlides, {
     wrap: true,
