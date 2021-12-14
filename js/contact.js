@@ -62,12 +62,13 @@ function submitForm() {
   const form = document.querySelector('.submit-form')
   const formData = new FormData(form)
   const url = 'https://formsubmit.io/send/zacharyneill@gmail.com'
-  fetch(
-    url,
-    {
-      method: 'POST',
-      body: formData
-    }
-  )
+  fetch(url,{method: 'POST', body: formData
+  }).then(function(){
+    $(".alert-success").fadeIn();
+    $(".alert-danger").fadeOut();
+  }).catch(function(){
+    $(".alert-success").fadeOut();
+    $(".alert-danger").fadeIn();
+  });
   return false
-}
+};
