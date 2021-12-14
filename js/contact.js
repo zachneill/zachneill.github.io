@@ -1,12 +1,12 @@
 $(document).ready(function(){
   animateCSS(".navbar-brand", "flipInX");
-  setTimeout(revealFooter, 100);
-  setTimeout(revealEmail, 300);
-  setTimeout(revealMessage, 400);
-  setTimeout(revealSubmit, 500);
+  setTimeout(function(){ animateCSS(".email", "fadeInUpBig") }, 300);
+  setTimeout(function(){ animateCSS(".message", "fadeInUpBig") }, 400);
+  setTimeout(function(){ animateCSS(".submitBtn", "fadeInUpBig") }, 500);
   animateCSS(".get-in-touch", 'bounceInUp').then((message) => {
     animateCSS(".get-in-touch", 'pulse');
   });
+  setTimeout(function(){ animateCSS(".footer", "fadeInUpBig") }, 1700);
 });
   
 const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {  
@@ -22,21 +22,6 @@ const animateCSS = (element, animation, prefix = 'animate__') => new Promise((re
   node.addEventListener('animationend', handleAnimationEnd, {once: true});
 });
 
-function reveal(){
-  $(".revealer").addClass("transitionOut");
-};
-function revealSubmit(){
-  animateCSS(".submitBtn", "fadeInUpBig");
-};
-function revealEmail(){
-  animateCSS(".email", "fadeInUpBig");
-};
-function revealMessage(){
-  animateCSS(".message", "fadeInUpBig");
-};
-function revealFooter(){
-  animateCSS(".footer", "bounceInUp");
-};
 function fadeToPage(page){
   $(".navbar-collapse").collapse('hide');
   $(".footer").addClass("transitionOut");

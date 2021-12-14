@@ -1,11 +1,11 @@
 $(document).ready(function(){
   animateCSS(".navbar-brand", "flipInX");
-  setTimeout(revealFooter, 150);
+  setTimeout(function(){ animateCSS(".footer", "bounceInUp") }, 150);
   animateCSS(".main-title", 'bounceInUp').then((message) => {
     animateCSS(".main-title", 'pulse');
   });
-  animateCSS(".bullet-1", "lightSpeedInLeft");
-  setTimeout(revealBullet, 200);
+  setTimeout(function() { animateCSS(".bullet-1", "lightSpeedInLeft"); }, 1000);
+  setTimeout(function() { animateCSS(".bullet-2", "lightSpeedInRight"); }, 1200);
   var carouselSlides = document.querySelector('#carouselSlides')
   var carousel = new bootstrap.Carousel(carouselSlides, {
     wrap: true,
@@ -26,12 +26,6 @@ const animateCSS = (element, animation, prefix = 'animate__') => new Promise((re
   node.addEventListener('animationend', handleAnimationEnd, {once: true});
 });
 
-function revealBullet(){
-  animateCSS(".bullet-2", "lightSpeedInRight");
-};
-function revealFooter(){
-  animateCSS(".footer", "bounceInUp");
-};
 function fadeToPage(page){
   $(".navbar-collapse").collapse('hide');
   $(".footer").addClass("transitionOut");
