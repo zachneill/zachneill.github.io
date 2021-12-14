@@ -57,3 +57,17 @@ function fadeToPage(page){
     };
   });
 };
+
+function submitForm() {
+  const form = document.querySelector('.submit-form')
+  const formData = new FormData(form)
+  const url = 'https://formsubmit.io/send/zacharyneill@gmail.com'
+  fetch(
+    url,
+    {
+      method: 'POST',
+      body: formData
+    }
+  )
+  return false
+}
