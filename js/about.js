@@ -3,7 +3,7 @@ $(document).ready(function(){
   setTimeout(function(){ animateCSS(".bq-div", "fadeIn") }, 900);
   setTimeout(function() { animateCSS(".footer", "bounceInUp") }, 500);
   wait = 1000;
-  for (let i = 1; i<=21; i++) {
+  for (let i = 1; i<=30; i++) {
     setTimeout(function() { animateCSS(".btn"+i, "bounceInUp") }, wait);
     wait+=50;
   };
