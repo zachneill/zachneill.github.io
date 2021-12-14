@@ -34,16 +34,18 @@
         </div>
         <div class="overflow-hidden row text-center justify-content-md-center">
           <div class="col col-md-6 col-md-offset-6">
-            <form>
+            <form class="submit-form" action="https://formsubmit.io/send/zacharyneill@gmail.com" method="POST" role="form">
+              <input name="_redirect" type="hidden" id="name" value="https://www.zachneill.github.io">
+              <input class="d-none" name="_formsubmit_id" type="text">
               <div class="email opacity-0 mx-2 my-3">
-                <label for="emailInput" class="form-label float-start">Email</label>
-                <input type="email" class="form-control" id="contact-email" aria-describedby="email">
+                <label for="emailInput"class="form-label float-start" name="email" required aria-required="true">Email</label>
+                <input type="email" class="form-control" name="email" required aria-required="true" id="contact-email" aria-describedby="email">
               </div>
               <div class="message opacity-0 mx-2 my-3">
                 <label for="messageInput" class="form-label float-start">Your message</label>
-                <textarea class="form-control" id="contact-message" rows="4"></textarea>
+                <textarea class="form-control" name="comment" id="contact-message" rows="4"></textarea>
               </div>
-              <button type="submit" class="submitBtn btn btn-outline-primary opacity-0">Submit</button>
+              <input type="submit" value="Submit" class="submitBtn btn btn-lg btn-outline-primary opacity-0">
             </form>
           </div>
         </div>
@@ -60,6 +62,14 @@
       </div>
     </div>
   </div>
+  <div class="bottom-0 position-absolute alert alert-success alert-dismissible fade show" hidden>
+    <strong>Success!</strong> Your message has been sent successfully.
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+  <div class="bottom-0 position-absolute alert alert-danger alert-dismissible fade show" hidden>
+    <strong>Error!</strong> A problem has been occurred while submitting your data.
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
   <footer class="mt-5 text-center text-dark position-relative footer opacity-0 w-100 bottom-0 mb-1">©2021 Zach Neill |
     <span>
       <a class="p-0 btn" href="https://github.com/zachneill" target="_blank"><span class="text-white bi bi-github"></span></a>
@@ -68,7 +78,7 @@
       <a class="p-0 btn" href="https://www.instagram.com/_amerasian/" target="_blank"><span class="text-white bi bi-instagram"></span></a>
     </span>
   </footer>
-    
+  
   <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
   <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script src="media/bootstrap-icons/bootstrap-icons.json" type="text/javascript"></script>

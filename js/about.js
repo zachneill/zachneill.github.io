@@ -13,7 +13,7 @@ $(document).ready(function(){
     setTimeout(function() { animateCSS(".btn"+i, "bounceInUp") }, wait);
     wait+=50;
     if (i === 30){
-      wait = 3050;
+      wait = 3100;
     };
   };
   setTimeout(function(){ animateCSS(".education", "fadeIn") }, 2300);
