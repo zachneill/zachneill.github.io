@@ -43,12 +43,16 @@ function fadeToPage(page){
   animateCSS(".home-flip", 'flipOutX').then((message) => {
     $(".home-flip").addClass("opacity-0");
   });
-  animateCSS(".about-flip", 'flipOutX').then((message) => {
-    $(".about-flip").addClass("opacity-0");
-  });
-  animateCSS(".contact-flip", 'flipOutX').then((message) => {
-    $(".contact-flip").addClass("opacity-0");
-  });
+  setTimeout(function(){ 
+    animateCSS(".about-flip", 'flipOutX').then((message) => {
+      $(".about-flip").addClass("opacity-0");
+    }); 
+  }, 25);
+  setTimeout(function(){ 
+    animateCSS(".contact-flip", 'flipOutX').then((message) => {
+      $(".contact-flip").addClass("opacity-0");
+    }); 
+  }, 200);
   animateCSS(".all-no-nav", 'bounceOutDown').then((message) => {
     $(".all-no-nav").addClass("opacity-0");
     if (page == "about"){

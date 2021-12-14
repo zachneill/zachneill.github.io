@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  animateCSS(".home-flip", "flipInX");
+  animateCSS(".home-flip", 'flipInX');
   setTimeout(function(){ animateCSS(".about-flip", "flipInX") }, 200);
   setTimeout(function(){ animateCSS(".contact-flip", "flipInX") }, 400);
   animateCSS(".about-me", 'bounceInUp').then((message) => {
@@ -19,7 +19,8 @@ $(document).ready(function(){
   setTimeout(function(){ animateCSS(".education", "fadeIn") }, 2300);
   setTimeout(function(){ animateCSS(".college", "fadeIn") }, 2400);
   setTimeout(function(){ animateCSS(".major", "fadeIn") }, 2500);
-  setTimeout(function(){ animateCSS(".coursework", "fadeIn") }, 2600);
+  setTimeout(function(){ animateCSS(".full-ride", "fadeIn") }, 2600);
+  setTimeout(function(){ animateCSS(".coursework", "fadeIn") }, 2700);
   setTimeout(function(){ animateCSS(".hobbies", "fadeIn") }, 2900);
   setTimeout(function(){ animateCSS(".person", "fadeIn") }, 3000);
   setTimeout(function(){ animateCSS(".additional", "fadeIn") }, 3700);
@@ -46,18 +47,26 @@ const animateCSS = (element, animation, prefix = 'animate__') => new Promise((re
   node.addEventListener('animationend', handleAnimationEnd, {once: true});
 });
 
+function switchToNormal(){
+  // $(".home-flip").removeClass("disabled");
+};
+
 function fadeToPage(page){
   $(".navbar-collapse").collapse('hide');
   $(".footer").addClass("transitionOut");
   animateCSS(".home-flip", 'flipOutX').then((message) => {
     $(".home-flip").addClass("opacity-0");
   });
-  animateCSS(".about-flip", 'flipOutX').then((message) => {
-    $(".about-flip").addClass("opacity-0");
-  });
-  animateCSS(".contact-flip", 'flipOutX').then((message) => {
-    $(".contact-flip").addClass("opacity-0");
-  });
+  setTimeout(function(){ 
+    animateCSS(".about-flip", 'flipOutX').then((message) => {
+      $(".about-flip").addClass("opacity-0");
+    }); 
+  }, 50);
+  setTimeout(function(){ 
+    animateCSS(".contact-flip", 'flipOutX').then((message) => {
+      $(".contact-flip").addClass("opacity-0");
+    }); 
+  }, 200);
   animateCSS(".all-no-nav", 'bounceOutDown').then((message) => {
     $(".all-no-nav").addClass("opacity-0");
     if (page == "about"){
@@ -68,4 +77,4 @@ function fadeToPage(page){
       location.href = 'index.html';
     };
   });
-};
+}; 
