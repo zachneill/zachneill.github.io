@@ -6,20 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Zach Neill - About</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="media/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="d-flex flex-column h-100">
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <button class="ls-font navbar-brand btn-no-style opacity-0" onclick="fadeToPage('home')">Zach Neill / About</button>
+      <button class="home-flip ls-font navbar-brand btn-no-style opacity-0" onclick="fadeToPage('home')">Zach Neill <span class="bi bi-caret-right align-middle"></span> About</button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <button class="nav-link btn-no-style active" aria-current="page" onclick="fadeToPage('about')">About</button>
-          <button class="nav-link btn-no-style" onclick="fadeToPage('contact')">Contact</button>
+          <button class="about-flip nav-link btn-no-style active" aria-current="page" onclick="fadeToPage('about')">About</button>
+          <button class="contact-flip nav-link btn-no-style" onclick="fadeToPage('contact')">Contact</button>
         </div>
       </div>
     </div>
@@ -115,24 +116,43 @@
           <button type="button" class="btn27 m-2 btn btn-outline-secondary opacity-0" data-bs-toggle="tooltip" 
           title="Learned Julia, Colab, and self-operating SLAM Pose robotics">Autonomous Robotics</button>
           <button type="button" class="btn28 m-2 btn btn-outline-secondary opacity-0" data-bs-toggle="tooltip" 
-          title="Wired LCD clock from Arduino and PCB board from scratch; coded with C/C++ dialect">Electricity & Electronics</button>
+          title="Wired/soldered LCD clock to Arduino and PCB board from scratch; coded with C/C++ dialect">Electricity & Electronics</button>
           <button type="button" class="btn29 m-2 btn btn-outline-secondary opacity-0" data-bs-toggle="tooltip" 
           title="Learned Python and the Pycharm IDE">Software Design and Implementation</button>
           <button type="button" class="btn30 m-2 btn btn-outline-secondary opacity-0" data-bs-toggle="tooltip" 
           title="Learned wireframing and coded a chess-related game from scratch">Building Better Apps</button>
         </div>
       </div>
-      <h2 class="text-center mt-5 hobbies ls-font">My hobbies ;)</h2>
+      <h2 class="text-center mt-5 mb-3 hobbies ls-font">My hobbies ;)</h2>
       <p class="text-center">
         I'd love for us to know one another more. I'm a software engineer, and I love to code. But, there's so much more 
         about me as a person! 
       </p>
+      <h2 class="text-center mt-5 mb-3 hobbies ls-font">Additional projects</h2>
+      <div class="col col-md-9 offset-md-1">
+        <p>
+        I am currently working on a website for Snaratin Co. I am the solo developer of this journey. 
+        </p>
+        <p>
+          In a couple afternoons, I created a Google Form spambot that would repeatedly send user-customized messages to a Google 
+          Form. That project, which notoriously took down the form, is modestly available <a href="https://bereans.github.io/bgw" 
+          target="_blank">here</a>. I did the same for a separate form <a href="https://bereans.github.io/" target="_blank">here</a>.
+        </p>
+      </div>
     </div>
   </div>
-  <footer class="text-center text-dark position-relative footer opacity-0 w-100 bottom-0 mb-1">©2021 Zach Neill</footer>
-  
+  <footer class="mt-5 text-center text-dark position-relative footer opacity-0 w-100 bottom-0 mb-1">©2021 Zach Neill |
+    <span>
+      <a class="p-0 btn" href="https://github.com/zachneill" target="_blank"><span class="text-white bi bi-github"></span></a>
+      <a class="p-0 btn" href="https://www.linkedin.com/in/zach-neill-0a957b197/" target="_blank"><span class="text-white bi bi-linkedin"></span></a>
+      <a class="p-0 btn" href="https://www.facebook.com/zach.neill.357" target="_blank"><span class="text-white bi bi-facebook"></span></a>
+      <a class="p-0 btn" href="https://www.instagram.com/_amerasian/" target="_blank"><span class="text-white bi bi-instagram"></span></a>
+    </span>
+  </footer>
+
   <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
   <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="media/bootstrap-icons/bootstrap-icons.json" type="text/javascript"></script>
   <script src="js/about.js" type="text/javascript"></script>
 </body>
 </html>

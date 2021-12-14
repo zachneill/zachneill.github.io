@@ -6,20 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Zach Neill - Home</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="media/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="d-flex flex-column h-100">
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <button class="ls-font navbar-brand btn-no-style opacity-0" onclick="fadeToPage('home')">Zach Neill / Home</button>
+      <button class="home-flip ls-font navbar-brand btn-no-style opacity-0" onclick="fadeToPage('home')">Zach Neill <span class="bi bi-caret-right align-middle"></span> Home</button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <button class="nav-link btn-no-style" onclick="fadeToPage('about')">About</button>
-          <button class="nav-link btn-no-style" onclick="fadeToPage('contact')">Contact</button>
+          <button class="about-flip nav-link btn-no-style" onclick="fadeToPage('about')">About</button>
+          <button class="contact-flip nav-link btn-no-style" onclick="fadeToPage('contact')">Contact</button>
         </div>
       </div>
     </div>
@@ -55,7 +56,7 @@
           </div>
         </div>
       </div>
-      <div class="row d-flex text-white">
+      <div class="row text-white">
         <h2 class="text-center my-4">My current work</h4>
         <div class="col col-md-6 text-end my-3">
           <h5 class="d-inline-flex mb-2">Developing a website for thousands of staff and students</h5>
@@ -63,7 +64,7 @@
           role="button" aria-expanded="false" aria-controls="CELTSCollapse" href="#celts-collapse" >Context</a>
           <div class="collapse" id="celts-collapse">
             <div class="mt-2 card card-body bg-dark border-dark rounded-3">
-              <h5 class="card-title">CELTS Full Stack Developer</h5>
+              <h5 class="card-title text-center">CELTS Full Stack Developer</h5>
               <p class="card-text text-start">
                 From scratch, my 8-person development team worked via Agile to develop a website for Berea College’s on-campus 
                 organization, CELTS. When a user signs in, the first page was created by me. Likewise is the case for much of the 
@@ -79,14 +80,14 @@
           role="button" aria-expanded="false" aria-controls="CASLSFCollapse" href="#cas-lsf-collapse">Context</a>
           <div class="collapse" id="cas-lsf-collapse">
             <div class="mt-2 card card-body bg-dark border-dark rounded-3">
-              <h5 class="card-title">CAS/LSF Web Programmer</h5>
+              <h5 class="card-title text-center">CAS/LSF Web Programmer</h5>
               <p class="card-text text-start">
                 I am providing full stack development on two of Berea College's most visited applications. The first is 
                 their Labor Status Form website, also known as LSF. I work on both its front end styling as well as its back end 
                 functionality. The second is their Course Administration and Scheduling website, also known as CAS. I have 
                 fixed numerous issues that had previously been problems for years. LSF and CAS use SQLite. While they are 
-                BC-only, the sites are <a href="https://lsf.berea.edu" >lsf.berea.edu</a> and 
-                <a href="https://cas.berea.edu">cas.berea.edu</a>. 
+                BC-only, the sites are <a href="https://lsf.berea.edu" target="_blank">lsf.berea.edu</a> and 
+                <a href="https://cas.berea.edu" target="_blank">cas.berea.edu</a>. 
               </p>
             </div>
           </div>
@@ -99,7 +100,7 @@
           role="button" aria-expanded="false" aria-controls="ISSCollapse" href="#iss-collapse">Context</a>
           <div class="collapse" id="iss-collapse">
             <div class="mt-2 card card-body bg-dark border-dark rounded-3">
-              <h5 class="card-title">IS&S Manager</h5>
+              <h5 class="card-title text-center">IS&S Manager</h5>
               <p class="card-text text-start">
                 I’ve worked for three years at Berea College’s software center (Information Systems & Services). I’ve worked 
                 and communicated with thousands of professors and students, attacking problems and conquering technology along the way. I 
@@ -110,7 +111,7 @@
           </div>
         </div>
         <div class="col col-md-6 text-start my-3">
-          <h5 class="d-inline-flex mb-2">Contributing to popular open source projects</h5>
+          <h5 class="d-inline-flex mb-2 text-center">Contributing to popular open source projects</h5>
           <a class="btn btn-outline-primary d-inline-flex m-2" data-bs-toggle="collapse" 
           role="button" aria-expanded="false" aria-controls="OSCollapse" href="#os-collapse">Context</a>
           <div class="collapse" id="os-collapse">
@@ -134,12 +135,18 @@
     <br class="my-5">
     <div class="br-40"></div>
   </div>
-  <footer class="text-dark text-center position-relative footer opacity-0 w-100 bottom-0 mb-1">
-    ©2021 Zach Neill
+  <footer class="mt-5 text-center text-dark position-relative footer opacity-0 w-100 bottom-0 mb-1">©2021 Zach Neill |
+    <span>
+      <a class="p-0 btn" href="https://github.com/zachneill" target="_blank"><span class="text-white bi bi-github"></span></a>
+      <a class="p-0 btn" href="https://www.linkedin.com/in/zach-neill-0a957b197/" target="_blank"><span class="text-white bi bi-linkedin"></span></a>
+      <a class="p-0 btn" href="https://www.facebook.com/zach.neill.357" target="_blank"><span class="text-white bi bi-facebook"></span></a>
+      <a class="p-0 btn" href="https://www.instagram.com/_amerasian/" target="_blank"><span class="text-white bi bi-instagram"></span></a>
+    </span>
   </footer>
   
   <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
   <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="media/bootstrap-icons/bootstrap-icons.json" type="text/javascript"></script>
   <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
