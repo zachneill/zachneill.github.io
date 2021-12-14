@@ -64,9 +64,11 @@ function submitForm() {
   const url = 'https://formsubmit.io/send/zacharyneill@gmail.com'
   fetch(url,{method: 'POST', body: formData
   }).then(function(){
+    console.log("Fetched");
     $(".alert-success").fadeIn();
     $(".alert-danger").fadeOut();
   }).catch(function(){
+    console.log("FAILED");
     $(".alert-success").fadeOut();
     $(".alert-danger").fadeIn();
   });
