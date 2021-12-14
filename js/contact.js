@@ -62,15 +62,19 @@ function submitForm() {
   const form = document.querySelector('.submit-form')
   const formData = new FormData(form)
   const url = 'https://formsubmit.io/send/zacharyneill@gmail.com'
-  fetch(url,{method: 'POST', body: formData
-  }).then(function(){
-    console.log("Fetched");
-    $(".alert-success").fadeIn();
-    $(".alert-danger").fadeOut();
-  }).catch(function(){
-    console.log("FAILED");
-    $(".alert-success").fadeOut();
-    $(".alert-danger").fadeIn();
-  });
-  return false
+  fetch(
+    url,
+    {
+      method: 'POST',
+      body: formData
+    }
+  )
+  return showAlert();
+};
+
+function showAlert(){
+  console.log("Showing alert");
+  $('.submit-form')[0].reset();
+  $(".alert-success").fadeIn();
+  return false;
 };
