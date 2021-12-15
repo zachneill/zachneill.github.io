@@ -9,7 +9,7 @@ $(document).ready(function(){
   setTimeout(function(){ animateCSS(".recognition", "fadeIn") }, 1100);
   setTimeout(function(){ animateCSS(".skills", "fadeIn") }, 1200);
   wait = 1000;
-  for (let i = 1; i<=43; i++) {
+  for (let i = 1; i<=44; i++) {
     setTimeout(function() { animateCSS(".btn"+i, "bounceInUp") }, wait);
     wait+=50;
     if (i === 30){
