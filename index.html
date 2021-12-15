@@ -36,8 +36,8 @@
         </div>
       </div>
       <div class="container-fluid mx-auto">
-        <div id="carouselSlides" class="carousel slide carousel-fade opacity-0" data-bs-interval="3000" data-bs-ride="carousel">
-          <div class="carousel-inner">
+        <div class="carouselMD carousel slide carousel-fade opacity-0" data-bs-interval="3000" data-bs-ride="carousel">
+          <div class="carousel-inner d-none d-md-block">
             <div class="carousel-item active">
               <img src="./media/me.jpg" class="d-block m-auto w-25 rounded-circle border border-dark border-5" alt="zach-profile-jpg">
             </div>
@@ -55,9 +55,30 @@
             </div>
           </div>
         </div>
+        <div class="carouselSM carousel slide carousel-fade opacity-0" data-bs-interval="3000" data-bs-ride="carousel">
+          <div class="carousel-inner d-md-none">
+            <div class="carousel-item active">
+              <img src="./media/me.jpg" class="d-block m-auto w-75 rounded-circle border border-dark border-5" alt="zach-profile-jpg">
+            </div>
+            <div class="carousel-item">
+              <img src="./media/robotics.jpg" class="d-block m-auto w-75 rounded-circle border border-dark border-5" alt="zach-robotics">
+            </div>
+            <div class="carousel-item">
+              <img src="./media/robotics2.jpg" class="d-block m-auto w-75 rounded-circle border border-dark border-5" alt="zach-robotics2">
+            </div>
+            <div class="carousel-item">
+              <img src="./media/bricks.jpg" class="d-block m-auto w-75 rounded-circle border border-dark border-5" alt="zach-bricks">
+            </div>
+            <div class="carousel-item">
+              <img src="./media/fellas.jpg" class="d-block m-auto w-75 rounded-circle border border-dark border-5" alt="zach-fellas">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row text-white">
         <h2 class="text-center my-4 current-work opacity-0">My current work</h4>
+      </div>
+      <div class="row text-white">
         <div class="col col-md-6 text-end my-3">
           <h5 class="title1 d-inline-flex mb-2 opacity-0">Developing a website for thousands of staff and students</h5>
           <a class="btn1 btn btn-outline-primary d-inline-flex m-2 opacity-0" data-bs-toggle="collapse" 
@@ -116,7 +137,7 @@
           role="button" aria-expanded="false" aria-controls="OSCollapse" href="#os-collapse">Context</a>
           <div class="collapse" id="os-collapse">
             <div class="my-2 me-2 card card-body bg-dark border-dark rounded-3">
-              <h5 class="card-title">Open-source Software Engineer</h5>
+              <h5 class="card-title text-center">Open-source Software Engineer</h5>
               <p class="card-text text-start">
                 I'm contributing to numerous well-known open-source projects. I did both back-end and front-end work 
                 with the website <a href="https://runestone.academy" target="_blank">Runestone Academy.</a> Additionally, I

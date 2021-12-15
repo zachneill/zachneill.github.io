@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  var carouselSlides = document.querySelector('.carouselMD')
+  var carousel = new bootstrap.Carousel(carouselSlides, {
+    wrap: true,
+    pause: false
+  });
+  var carouselSlides = document.querySelector('.carouselSM')
+  var carousel = new bootstrap.Carousel(carouselSlides, {
+    wrap: true,
+    pause: false
+  });
   animateCSS(".home-flip", "flipInX");
   setTimeout(function(){ animateCSS(".about-flip", "flipInX") }, 200);
   setTimeout(function(){ animateCSS(".contact-flip", "flipInX") }, 400);
@@ -7,7 +17,8 @@ $(document).ready(function(){
   });
   setTimeout(function() { animateCSS(".bullet-1", "lightSpeedInLeft"); }, 1000);
   setTimeout(function() { animateCSS(".bullet-2", "lightSpeedInRight"); }, 1200);
-  setTimeout(function() { animateCSS(".carousel", "bounceInUp"); }, 1600);
+  setTimeout(function() { animateCSS(".carouselMD", "bounceInUp"); }, 1600);
+  setTimeout(function() { animateCSS(".carouselSM", "bounceInUp"); }, 1600);
   setTimeout(function() { animateCSS(".current-work", "bounceInUp"); }, 1700);
   wait = 1800;
   for (let i = 1; i<=4; i++) {
@@ -16,12 +27,6 @@ $(document).ready(function(){
     wait+=150;
   };
   setTimeout(function(){ animateCSS(".footer", "bounceInUp") }, 2000);
-
-  var carouselSlides = document.querySelector('#carouselSlides')
-  var carousel = new bootstrap.Carousel(carouselSlides, {
-    wrap: true,
-    pause: false
-  });
 });
 
 const animateCSS = (element, animation, prefix = 'animate__') => new Promise((resolve, reject) => {  
