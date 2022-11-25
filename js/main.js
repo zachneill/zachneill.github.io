@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  $("#warning-modal").modal('show')
+  
   var carouselSlides = document.querySelector('.carouselMD')
   var carousel = new bootstrap.Carousel(carouselSlides, {
     wrap: true,
