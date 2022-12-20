@@ -8,7 +8,7 @@
     <p><a href="https://bcvm.herokuapp.com" target="_blank">BCVM</a> shows which vending machines at
       Berea College are in short supply. It is a web application written with
       an Angular front end and a Spring Boot Java back end.
-      Hosted by the Heroku Saas, it connects to a PostgreSQL database and can be installed as a PWA.
+      Hosted by the Heroku PaaS, it connects to a PostgreSQL database and can be installed as a PWA.
       The app's data is crowd-sourced, but there are ReCAPTCHA security measures. Additionally, users may create
       accounts; their passwords are encrypted under modern hashing and salting cryptographic protocol.
     </p>
@@ -46,9 +46,10 @@
     </div>
     <p><a href="https://sigbuild.github.io" target="_blank">SigBuild</a> takes user inputs and creates
       a Berea College signature for the ends of emails. It is a web application coded in React.js.
-      The app uses the open-source UI library MUI to assist with presentation.
+      The app uses the open-source UI library MUI to assist with presentation. It pays particular
+      attention to mobile-first design, with screen size duly accounted for.
     </p>
-    <p class="mat-h2">Tech Used</p>
+    <p class="mat-h2">Key Tech Used</p>
     <mat-list style="padding: 0">
       <mat-list-item>
         <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
@@ -80,7 +81,7 @@
       The game utilizes only the HTML, CSS, JavaScript, and JQuery library. It was built off the Twine
       prototyping tool and heavily modified.
     </p>
-    <p class="mat-h2">Tech Used</p>
+    <p class="mat-h2">Key Tech Used</p>
     <mat-list style="padding: 0">
       <mat-list-item>
         <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
@@ -108,5 +109,6 @@
       </mat-list-item>
     </mat-list>
   </div>
-  <button mat-raised-button style="background-color:dimgray; color: white" color="basic" class="big-center" (click)="handleNext()">Next</button>
+  <button mat-raised-button style="background-color:dimgray; color: white"
+          color="basic" class="big-center" (click)="handleNext()">Next Project</button>
 </div>
