@@ -1,0 +1,17 @@
+<div class="buttons">
+  <div [@fadeInOut]="this.global.newImage != 'cliff' ? 'close': 'open'" (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')">
+    <h1>
+      <button [disabled]="!backBtn" type="button" (click)="this.global.changeImage('cliff')" mat-button routerLink="{{global.route('')}}">
+        <span class="mat-headline-4 button">back</span>
+      </button>
+    </h1>
+  </div>
+  <h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"
+       (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')" class="mat-headline-4 header">I'm Zach, <br> a software developer.</h1>
+  <h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"
+      (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')"><button type="button" (click)="this.global.changeImage('nisc')" mat-button routerLink="{{global.route('work')}}"><span class="mat-headline-4 button">work</span></button></h1>
+  <h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"
+      (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')"><button type="button" (click)="this.global.changeImage('me')" mat-button routerLink="{{global.route('about')}}"><span class="mat-headline-4 button">about</span></button></h1>
+  <h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"
+      (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')"><button type="button" (click)="this.global.changeImage('bcvm')" mat-button routerLink="{{global.route('projects')}}"><span class="mat-headline-4 button">projects</span></button></h1>
+</div>

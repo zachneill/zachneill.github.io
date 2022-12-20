@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <mat-toolbar-row style="display: flex; justify-content: space-between">
+    <button class="name" (click)="reset()"
+            mat-button
+            aria-label="home"><span class="mat-headline-2">Zach Neill</span>
+    </button>
+    <span class="icons">
+      <a class="home" mat-button type="button" (click)="reset()">home</a>
+      <a mat-icon-button type="button" href="https://www.linkedin.com/in/zachneill/" target="_blank" aria-label="LinkedIn"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+      <a mat-icon-button type="button" href="https://github.com/zachneill" target="_blank" aria-label="GitHub"><fa-icon [icon]="faGithub"></fa-icon></a>
+      <a mat-icon-button type="button" href="https://www.facebook.com/zach.neill.357" target="_blank" aria-label="Facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+      <a mat-icon-button type="button" href="mailto:zacharyneill@gmail.com" target="_blank" aria-label="Google"><fa-icon [icon]="faGoogle"></fa-icon></a>
+      <a mat-icon-button type="button" href="https://discordapp.com/users/599753439983042572" target="_blank" aria-label="Discord"><fa-icon [icon]="faDiscord"></fa-icon></a>
+      <a mat-icon-button type="button" href="https://www.instagram.com/_amerasian/" target="_blank" aria-label="Instagram"><fa-icon [icon]="faInstagram"></fa-icon></a>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>

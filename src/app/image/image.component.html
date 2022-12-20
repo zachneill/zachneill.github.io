@@ -1,0 +1,4 @@
+<div class="outer-div" [@fadeInOut]="global.fade ? handleOpen():'close'"
+     (@fadeInOut.done)="this.global.handleFade()">
+  <img src="/assets/{{this.global.imageName}}.png" alt="zach sitting wistfully on a cliff" class="inner-div" />
+</div>

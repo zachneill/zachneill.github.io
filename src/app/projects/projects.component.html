@@ -1,0 +1,112 @@
+<div class="big-center">
+  <br>
+  <br>
+  <div *ngIf="project === 'bcvm'">
+    <div style="display: flex">
+      <p class="mat-headline-5">BCVM</p>
+    </div>
+    <p><a href="https://bcvm.herokuapp.com" target="_blank">BCVM</a> shows which vending machines at
+      Berea College are in short supply. It is a web application written with
+      an Angular front end and a Spring Boot Java back end.
+      Hosted by the Heroku Saas, it connects to a PostgreSQL database and can be installed as a PWA.
+      The app's data is crowd-sourced, but there are ReCAPTCHA security measures. Additionally, users may create
+      accounts; their passwords are encrypted under modern hashing and salting cryptographic protocol.
+    </p>
+    <p class="mat-h2">Key Tech Used</p>
+    <mat-list style="padding: 0">
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          Angular
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          Java / Spring Boot
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          PostgreSQL
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          Heroku
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div *ngIf="project === 'sigbuild'">
+    <div style="display: flex">
+      <p class="mat-headline-5">SigBuild</p>
+    </div>
+    <p><a href="https://sigbuild.github.io" target="_blank">SigBuild</a> takes user inputs and creates
+      a Berea College signature for the ends of emails. It is a web application coded in React.js.
+      The app uses the open-source UI library MUI to assist with presentation.
+    </p>
+    <p class="mat-h2">Tech Used</p>
+    <mat-list style="padding: 0">
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          React.js
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          GitHub
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          SASS
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div *ngIf="project === 'autopilot'">
+    <div style="display: flex">
+      <p class="mat-headline-5">Going Autopilot</p>
+    </div>
+    <p><a href="https://going-autopilot.github.io" target="_blank">Going Autopilot</a> is a capstone project for
+      the Digital Media minor. It is an in-browser game that depicts the main character undergoing the effects
+      of amnesia but trying to live life normally.
+      The game utilizes only the HTML, CSS, JavaScript, and JQuery library. It was built off the Twine
+      prototyping tool and heavily modified.
+    </p>
+    <p class="mat-h2">Tech Used</p>
+    <mat-list style="padding: 0">
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          HTML
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          JavaScript
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          CSS
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>arrow_forward_ios</mat-icon>
+        <div matListItemTitle>
+          JQuery
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <button mat-raised-button style="background-color:dimgray; color: white" color="basic" class="big-center" (click)="handleNext()">Next</button>
+</div>

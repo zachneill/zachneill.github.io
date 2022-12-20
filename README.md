@@ -1,4 +1,4 @@
 # This is the portfolio of Zach Neill
-The website only utilizes HTML/CSS/JS without any framework or library (other than jQuery). I created this site from scratch...and Bootstrap 5.
+The website utilizes Angular. I created this site from scratch...and Angular Material.
 
 *-Created by Zach Neill*
