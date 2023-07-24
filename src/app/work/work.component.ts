@@ -20,8 +20,8 @@ import {Global} from "../global";
           opacity: 1
         })
       ),
-      transition('open => close', [animate('500ms ease-out')]),
-      transition('close => open', [animate('500ms ease-in')])
+      transition('open => close', [animate('100ms ease-out')]),
+      transition('close => open', [animate('100ms ease-in')])
     ])]
 })
 export class WorkComponent {

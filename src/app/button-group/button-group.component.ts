@@ -20,8 +20,8 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
           opacity: 1
         })
       ),
-      transition('open => close', [animate('500ms ease-out')]),
-      transition('close => open', [animate('500ms ease-in')])
+      transition('close => open', [animate('500ms ease-in')]),
+      transition('open => close', [animate('500ms ease-out')])
     ])]
 })
 export class ButtonGroupComponent {
