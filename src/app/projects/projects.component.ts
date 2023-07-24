@@ -16,12 +16,20 @@ export class ProjectsComponent {
     if (this.project === 'bcvm'){
       this.global.changeImage('sigbuild')
       this.project = 'sigbuild'
-    } else if (this.project === 'sigbuild'){
+    } else if (this.project === 'sigbuild') {
       this.global.changeImage('autopilot')
       this.project = 'autopilot'
-    } else if (this.project === 'autopilot'){
+      } else if (this.project === 'autopilot') {
       this.global.changeImage('bcvm')
       this.project = 'bcvm'
     }
+    // For the Too Loudifier...
+    // } else if (this.project === 'autopilot'){
+    //   this.global.changeImage('too-loudifier')
+    //   this.project = 'tl'
+    // } else if (this.project === 'tl'){
+    //   this.global.changeImage('bcvm')
+    //   this.project = 'bcvm'
+    // }
   }
 }
