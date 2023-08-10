@@ -3,7 +3,6 @@ The website utilizes Angular. I created this site from scratch...with some help 
 
 ### To Do:
 * Fix Material labels using (...) ellipses on smaller screen sizes
-* Add Too Loudifier to projects 
 * Upgrade Angular
 
 *-Created by Zach Neill*
