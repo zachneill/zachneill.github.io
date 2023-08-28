@@ -1,0 +1,7 @@
+<h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"
+    (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')" class="mat-headline-4 header">
+  I'm Zach, <br>
+  <div [@flip] = "flip" (@flip.done)="toggleVisibility('done')" (@flip.start)="toggleVisibility('start')">
+    {{title}}.
+  </div>
+</h1>

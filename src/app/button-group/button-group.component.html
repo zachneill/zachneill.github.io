@@ -6,8 +6,7 @@
       </button>
     </h1>
   </div>
-  <h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"
-       (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')" class="mat-headline-4 header">I'm Zach, <br> a software developer.</h1>
+  <greet></greet>
   <h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"
       (@fadeInOut.start)="onAnimation('start')" (@fadeInOut.done)="onAnimation('done')"><button type="button" (click)="this.global.changeImage('nisc')" mat-button routerLink="{{global.route('work')}}"><span class="mat-headline-4 button">work</span></button></h1>
   <h1 [hidden]="hidden" [@fadeInOut]="this.global.newImage === 'cliff' ? 'close': 'open'"

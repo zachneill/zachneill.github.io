@@ -17,7 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
-import {NgOptimizedImage} from "@angular/common";
+import { GreetComponent } from './greet/greet.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import {NgOptimizedImage} from "@angular/common";
     HomeComponent,
     ImageComponent,
     ButtonGroupComponent,
-    NavbarComponent
+    NavbarComponent,
+    GreetComponent
   ],
     imports: [
         BrowserModule,
@@ -39,8 +40,7 @@ import {NgOptimizedImage} from "@angular/common";
         MatIconModule,
         FontAwesomeModule,
         MatListModule,
-        MatCardModule,
-        NgOptimizedImage
+        MatCardModule
     ],
   providers: [],
   bootstrap: [AppComponent]

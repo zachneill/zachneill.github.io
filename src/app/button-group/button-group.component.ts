@@ -28,6 +28,7 @@ export class ButtonGroupComponent {
   hidden: boolean = false;
   initialAnimation: number = 2
   backBtn: boolean = true;
+  flip: any
   constructor(public global: Global) {
   }
 
