@@ -1,8 +1,25 @@
 {
-  "name": "portfolio",
+  "name": "zachneill",
   "compatibility_date": "2026-02-07",
-  "main": "./dist/cloudflare/browser/index.html",
-  "assets": {
-    "directory": "./dist/cloudflare/browser"
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Cloudflare Pages configuration
+  "pages_build_output_dir": "dist/cloudflare/browser",
+
+  // // Environment variables (optional)
+  // "env": {
+  //   "production": {
+  //     "routes": [
+  //       {
+  //         "pattern": "https://zachneill.dev/*",
+  //         "zone_id": "your-zone-id-here"
+  //       }
+  //     ]
+  //   }
+  // },
+
+  // Observability (optional)
+  "observability": {
+    "enabled": true
   }
 }
