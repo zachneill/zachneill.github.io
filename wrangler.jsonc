@@ -1,0 +1,8 @@
+{
+  "name": "zachneill.github.io",
+  "version": "0.0.1",
+  "compatibilityDate": "2026-02-07",
+  "assets": {
+    "directory": "./dist/cloudflare/browser"
+  }
+}
